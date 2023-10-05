@@ -1,8 +1,8 @@
 use_https::use_https! {
   // Will add a submodule for the contents
-  import test_module from "http://localhost:8000/test.rs";
+  import cool_lib_module from "https://raw.githubusercontent.com/Maki325/use-https/master/example/example/cool_lib.rs";
   // Eg.
-  // mod test_module {
+  // mod cool_lib_module {
   // ...
   // }
 }
@@ -11,7 +11,7 @@ use_https::use_https! {
 mod test;
 
 fn main() {
-  test::example();
+  test::say_hello();
 
-  test_module::example();
+  cool_lib_module::say_hello();
 }
