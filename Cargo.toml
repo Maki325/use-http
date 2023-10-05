@@ -1,0 +1,16 @@
+[package]
+name = "use-https"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+proc-macro2 = "1.0.67"
+quote = "1.0.33"
+reqwest = { version = "0.11.22", features = ["blocking"] }
+syn = "2.0.38"
+
+[workspace]
+members = ["example"]
